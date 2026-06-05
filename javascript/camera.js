@@ -212,7 +212,7 @@ async function downloadStrip(){
     ctx.drawImage(
       img2,
       18,
-      1292,
+      492,
       1076,
       807
     );
