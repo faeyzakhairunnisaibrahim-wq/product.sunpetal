@@ -1,26 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunpetalcam</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
 <div class="welcome-page">
+
   <p class="welcome-text">
-    Welcome to Sunpetalcam ⟢ Create your own Tangled inspired photo strip. <br>
+    Welcome to Sunpetalcam ⟢ Create your own Tangled inspired photo strip.
+    <br>
     Choose your frame and let the magic begin!
   </p>
+
   <img
-       src="assets/Logo.png"
-       class="logo"
+    src="asset/logo.png"
+    class="logo"
+    alt="Sunpetalcam Logo"
   >
+
   <div class="frame-buttons">
-       <button
-  class="frame-btn"
-  onclick="selectFrame(1, this)">
-  1 Frame
-</button>
+
+    <button
+      class="frame-btn"
+      onclick="selectFrame(1)">
+      1 Frame
+    </button>
+
+    <button
+      class="frame-btn"
+      onclick="selectFrame(2)">
+      2 Frame
+    </button>
+
+  </div>
+
+</div>
 
 <button
-  class="frame-btn"
-  onclick="selectFrame(2, this)">
-  2 Frame
-</button>
-</div>
-</div>
-<button class="start-btn">
+  class="start-btn"
+  onclick="startPhotobooth()">
   Start
 </button>
+
+<script src="javascript/script.js"></script>
+
+</body>
+</html>
