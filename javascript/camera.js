@@ -203,18 +203,18 @@ async function downloadStrip(){
 
     ctx.drawImage(
       img1,
-      225,
-      270,
-      3000,
-      1500
+      18,
+      22,
+      240,
+      170
     );
 
     ctx.drawImage(
       img2,
-      225,
-      2750,
-      3000,
-      1500
+      18,
+      222,
+      240,
+      170
     );
 
   }
@@ -233,7 +233,7 @@ async function downloadStrip(){
       7,
       53,
       1457,
-      988
+      1100
     );
 
   }
