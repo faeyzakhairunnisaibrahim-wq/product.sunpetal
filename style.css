@@ -1,1 +1,125 @@
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: Georgia;
+}
+.welcome-text{
+  color:#fff4d6;
+  text-align:center;
+  font-size:20px;
+  line-height:1.7;
+  margin-bottom:30px;
+  text-shadow:
+    0 0 10px rgba(255,215,0,0.5);
+}
+.welcome-page{
+  height:100vh;
+  width:100vw;
+  
+  display:flex;
+  flex-direction:column;
+  
+  justify-content:center;
+  align-items:center;
+  background-image:
+    linear-gradient(
+    rgba(75,29,107,0.7),
+    rgba(43,13,58,0.9)
+    ),
+    url("assets/Background-BENERAN.PNG");
+  background-size:
+    cover,
+    contain;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    center,
+    center bottom;
+}
+.logo{
+  width:400px;
+  filter:
+    drop-shadow(0 0 10px gold)
+    drop-shadow(0 0 20px gold);
+  margin-bottom:40px;
+  transform:translateY(-40px);
+  animation: spinLogo 12s linear infinite;
+}
+.frame-buttons{
+  display:flex;
+  gap:70px;
+  transform:translateY(-20px);
+}
+.frame-btn{
+  padding:15px 35px;
+  border:none;
+  border-radius:20px;
+  background:#f3d36b;
+  color:#4b1d6b;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+.frame-btn:hover{
+  transform:scale(1.08);
+  background:#ffe89a;
+  box-shadow:
+    0 0 15px gold,
+    0 0 30px gold;
+}
+.selected{
+  background:#fff3b0;
+  box-shadow:
+    0 0 15px gold
+    0 0 30px gold;
+  transform:scale(1.08);
+}
+.start-btn{
+  margin-top:30px;
+  padding:15px 40px;
+  border:none;
+  border-radius:25px;
+  background:#7a4db3;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.start-btn:hover{
+  background:#9160d1;
+  transform:scale(1.08);
+  box-shadow:
+    0 0 15px gold,
+    0 0 30px gold;
+}
 
+@keyframes spinLogo{
+  from{
+    transform:
+      translateY(-40px)
+      rotate(0deg);
+  }
+  to{
+    transform:
+      translateY(-40px)
+      rotate(360deg);
+  }
+}
+  
+}
+.frame-btn.selected{
+
+  background:#f3d36b;
+
+  color:#4b1d6b;
+
+  box-shadow:
+    0 0 15px gold;
+
+}
