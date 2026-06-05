@@ -37,7 +37,7 @@ let photoCount = 0;
 if(selectedFrame === 1){
 
   document.getElementById("frameImage").src =
-    "asset/frame1.png";
+    "asset/frameRapunzel.PNG";
 
   document
     .querySelector(".strip-container")
@@ -49,7 +49,7 @@ if(selectedFrame === 1){
 else{
 
   document.getElementById("frameImage").src =
-    "asset/frame2.png";
+    "asset/frameMenara.PNG";
 
 }
 
