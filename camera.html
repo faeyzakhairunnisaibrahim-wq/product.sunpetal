@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera</title>
 
+  <link rel="stylesheet" href="css/camera.css">
+</head>
+<body>
+
+<div class="camera-container">
+
+  <div class="camera-preview">
+
+    <video id="camera" autoplay></video>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <div id="countdown"></div>
+
+  </div>
+
+  <div class="strip-container">
+
+    <img
+      src="asset/frameMenara.png"
+      id="frameImage"
+      class="frame-overlay"
+      alt="Frame"
+    >
+
+    <img id="photo1" class="strip-photo1">
+
+    <img id="photo2" class="strip-photo2">
+
+  </div>
+
+</div>
+
+<div class="button-container">
+
+  <button class="capture-btn">
+    Capture
+  </button>
+
+  <button class="retake-btn">
+    Retake
+  </button>
+
+  <button class="download-btn">
+    Download
+  </button>
+
+</div>
+
+<script src="javascript/camera.js"></script>
+
+</body>
+</html>
